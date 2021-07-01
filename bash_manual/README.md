@@ -20,6 +20,10 @@
 
 `$ mv test.js script.js`
 
+### Скопировать фаил:
+
+` $ cp ../picts2/jpg /picts/wallpaper.jpg `
+
 ### Переместить фаил в папку выше:
 
 `$ mv script.js ../somedir/main.js`
@@ -50,3 +54,4 @@ $ rm style.css
 ### Создать папку и войти внее (выполнить несколько команд подряд):
 
 `$ mkdir assets && cd assets`
+
