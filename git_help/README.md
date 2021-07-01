@@ -44,7 +44,7 @@
 
 ### ПВносим изменения и делаем commit:
 
-`$ git commit -m "Commit's name"`
+`$ git commit -am "Commit's name"`
 
 ### Переходим обратно в главную ветвь :
 
@@ -52,12 +52,15 @@
 
 ### Вносим изменения и делаем commit (необязательно):
 
-`$ git commit -m "Commit's name"`
+`$ git commit -am "Commit's name"`
 
 ### Делаем слияние ветвей (нужно находится в ветке в которую вливаем (мастер `$ git status`)):
 
 ` $  git merge new-branch`
 
-### В случае уонфликтов редактируем файлы и делаем индексацию файлов и commit :
-`$ git commit -m "Commit's name"`
+### В случае конфликтов редактируем файлы и делаем индексацию файлов и commit :
+`$ git commit -am "Commit's name"`
 
+### Просмотр всех ветвей
+
+`$ git branch --list`
