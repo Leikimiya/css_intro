@@ -42,7 +42,7 @@
 
 ` $ git checkout new-branch`
 
-### ПВносим изменения и делаем commit:
+### Вносим изменения и делаем commit:
 
 `$ git commit -am "Commit's name"`
 
