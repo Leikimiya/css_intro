@@ -1,8 +1,61 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
+}
+html{
+    /* Baze font-size for 'rem' */
+    font-size: 16px;
 }
 .wallpaper{
     background: no-repeat url(/position/picts/wallpaper.jpg);
     background-size: cover;
+    background-position: right;
     height: 100vh;
+}
+
+.header {
+    background-color:rgba(8, 8, 8, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(252, 215, 170);
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem; 
+    font-weight: 300;  
+
+}
+.header h3 {
+    font-size: 1.5rem;   
+    font-weight: 600;
+}
+
+    @media (max-width: 350px) and (orientation: portrait) {
+
+    .header h1 {
+        font-size: 2rem;  
+}
+    .header h3 {
+         font-size: 1rem;          
+}
+       
+}
+    @media (max-width: 650px) and (orientation: landscape) {
+
+    .header h1 {
+        font-size: 2rem;  
+}
+    .header h3 {
+         font-size: 1rem;          
+}
+       
 }
