@@ -11,6 +11,7 @@
     border: 2px solid rgb(224, 16, 16);
     width: 100px;
     height: 100px;
+    
 }
 .logo{
      flex-grow: 1; 
