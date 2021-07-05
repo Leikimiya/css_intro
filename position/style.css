@@ -1,13 +1,18 @@
-*{
+*,*::before, *::after
+{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
+
 body{
     margin: 0;
 }
+
 html{
     /* Baze font-size for 'rem' */
     font-size: 16px;
 }
+
 .wallpaper{
     background: no-repeat url(/position/picts/wallpaper.jpg);
     background-size: cover;
@@ -16,13 +21,13 @@ html{
 }
 
 .header {
-    background-color:rgba(8, 8, 8, 0.4);
+    background-color:rgba(0, 0, 0, 0.4);
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    color: rgb(252, 215, 170);
-    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    /* font-family: 'Montserrat', sans-serif; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -34,6 +39,7 @@ html{
     font-weight: 300;  
 
 }
+
 .header h3 {
     font-size: 1.5rem;   
     font-weight: 600;
@@ -44,18 +50,98 @@ html{
     .header h1 {
         font-size: 2rem;  
 }
+
     .header h3 {
          font-size: 1rem;          
 }
        
 }
+
     @media (max-width: 650px) and (orientation: landscape) {
 
     .header h1 {
         font-size: 2rem;  
 }
+
     .header h3 {
          font-size: 1rem;          
 }
        
+}
+
+.order{
+    height: 100vh;
+    position: relative;
+}
+
+.order-background{
+    background: no-repeat url(/position/picts/order.jpg);
+    background-size: cover;
+    background-position: center; 
+    height: 100%; 
+}
+
+.order-info{
+    /*position start*/
+    position:absolute;
+    /*CSS Выравнивание по вертикали 1 старт*/
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 50px; */
+    /*CSS Выравнивание по вертикали 1 конец*/
+    /*position end*/
+    /* margin: auto; */
+    /* width: 200px;
+    height: 50px; */
+    /*CSS Выравнивание по вертикали 2 старт*/
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*CSS Выравнивание по вертикали 2 конец*/
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center;  */
+}
+.order-mask{
+    background-color:rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.order-info{
+    color: rgb(255, 255, 255);
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.order-button {
+    height: 3rem;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(60deg,rgb(60, 242, 248),rgb(241, 41, 225));
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .5s;
+
+
+    /* font-family: 'Montserrat', sans-serif; */
+}
+.order-button:hover{
+    background: linear-gradient(60deg,rgb(34, 148, 127),rgb(117, 20, 101));
+    
+}
+
+
+.order-button:active{
+    box-shadow: 0 0 0 0.25rem rgb(11, 222, 205);
 }
