@@ -163,12 +163,12 @@ html {
     margin-top: 1rem;
     background-size: 150% 150%;
     /* background-position: 0% 50%; */
-    animation: out .5s ease forwards;
+    animation: out 1s ease forwards;
 }
 
 .order-button-amin:hover{
      /* background-position: 100% 50%;  */
-     animation: in .5s ease forwards;
+     animation: in 1s ease forwards;
 }
 
  @keyframes in {
