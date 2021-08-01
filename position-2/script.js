@@ -44,12 +44,12 @@ console.log (helloUser('Hello', 'John'))
 console.log (helloUser('Hello', 'Jane'))
 console.log (helloUser('Привет'))
 
-
 let header = document.getElementById('header')
 header.textContent = hello3 
 
-
-
-
-
-
+function testFunction (arg1, arg2, arg3){
+    console.log(arg1);
+    console.log(arg2);
+    console.log(arg3); 
+}
+testFunction(1, 2, 3)
